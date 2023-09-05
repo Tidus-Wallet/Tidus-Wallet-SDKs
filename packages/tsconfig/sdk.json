@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+	"exclude": ["dist", "node_modules"],
+	"extends":"./base.json",
+	"compilerOptions": {
+		"target": "ES6",
+		"esModuleInterop": true
+	}
+}
