@@ -1,7 +1,7 @@
 {
-  "name": "@tiduswallet/evm-sdk",
+  "name": "@tiduswallet/bitcoin-sdk",
   "version": "0.0.1",
-  "description": "An SDK developed, used and maintained by the Tidus Wallet team to make wallet integration and interaction with EVM blockchains easier.",
+  "description": "An SDK developed, used and maintained by the Tidus Wallet team to make wallet integration and interaction with Bitcoin blockchain easier.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,8 +12,8 @@
   "keywords": [
     "blockchain",
     "web3",
-    "ethereum",
-    "evm"
+    "bitcoin",
+    "sdk"
   ],
   "author": "Tidus Wallet Devs",
   "license": "ISC",
