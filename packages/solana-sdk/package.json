@@ -7,14 +7,9 @@
   "scripts": {
     "test": "mocha",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc"
+    "build": "bun run clean && tsc"
   },
-  "keywords": [
-    "blockchain",
-    "web3",
-    "solana",
-    "sdk"
-  ],
+  "keywords": ["blockchain", "web3", "solana", "sdk"],
   "author": "Tidus Wallet Devs",
   "license": "ISC",
   "devDependencies": {

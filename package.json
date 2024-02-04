@@ -12,10 +12,7 @@
     "tsconfig": "*",
     "turbo": "latest"
   },
-  "name": "tidus-wallet-sdk",
-  "packageManager": "npm@9.6.7",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "name": "tidus-sdk",
+  "packageManager": "bun@1.0.25",
+  "workspaces": ["apps/*", "packages/*"]
 }
