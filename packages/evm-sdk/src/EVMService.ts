@@ -30,12 +30,13 @@ export default class EVMService {
 
   createFromMnemonic(mnemonic: string, accountIndex: number = 0) {
     this.mnemonic = mnemonic;
-    const account = mnemonicToAccount(mnemonic, { accountIndex: accountIndex });
-    this.wallet = createWalletClient({
-      account,
-      chain: this.blockchain,
-      transport: http(),
-    });
+    // this.wallet = this.createFromPrivateKey()
+    // const account = mnemonicToAccount(mnemonic, { accountIndex: accountIndex });
+    // this.wallet = createWalletClient({
+    //   account,
+    //   chain: this.blockchain,
+    //   transport: http(),
+    // });
   }
 
   createFromPrivateKey(privateKey: string) {

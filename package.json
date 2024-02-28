@@ -4,7 +4,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean"
   },
   "devDependencies": {
     "eslint": "^8.48.0",
@@ -14,7 +15,7 @@
   },
   "name": "tidus-sdk",
   "packageManager": "bun@1.0.25",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": ["packages/*"],
   "dependencies": {
     "@solana/web3.js": "^1.90.0",
     "bip32": "2.0.6",
