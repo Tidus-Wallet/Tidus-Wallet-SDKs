@@ -1,7 +1,7 @@
 {
-  "name": "@tiduswallet/evm-sdk",
+  "name": "@tiduswallet/utils",
   "version": "0.0.1",
-  "description": "An SDK developed, used and maintained by the Tidus Wallet team to make wallet integration and interaction with EVM blockchains easier.",
+  "description": "Utility functions for interacting with the blockchain.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,7 +9,13 @@
     "clean": "rm -rf dist",
     "build": "bun run clean && tsc"
   },
-  "keywords": ["blockchain", "web3", "ethereum", "evm"],
+  "keywords": [
+    "blockchain",
+    "web3",
+    "ethereum",
+    "evm",
+    "solana"
+  ],
   "author": "Tidus Wallet Devs",
   "license": "ISC",
   "devDependencies": {
