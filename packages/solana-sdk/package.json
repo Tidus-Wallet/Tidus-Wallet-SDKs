@@ -19,6 +19,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@tiduswallet/utils": "workspace:*"
+    "@tiduswallet/utils": "*"
   }
 }

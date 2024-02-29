@@ -1,4 +1,4 @@
-import { mnemonicToPrivateKey } from "./";
+import { mnemonicToPrivateKey, privateKeyToMnemonic } from "./";
 import { strictEqual } from "assert";
 
 const mnemonic =
@@ -33,5 +33,14 @@ describe("mnemonicToPrivateKey", () => {
       privateKey,
       "4bHYfPH6gKPgBi2Z7kVrbevhkPC4FnUuBAm4Bt9GxfqAht4noH4aEhWA5ZmNfLVhhgjdPZB6gx1XvSNbkRaTpykw",
     );
+  });
+});
+
+describe("privateKeyToMnemonic", () => {
+  it("should return a mnemonic phrase", () => {
+    const privateKey =
+      "0x0a1e99aecc3bd859b0bd96757e1bf36ec2d274d6f0e4774083bed4f0541450a8";
+    const mnemonic = privateKeyToMnemonic(privateKey);
+    console.log(mnemonic);
   });
 });

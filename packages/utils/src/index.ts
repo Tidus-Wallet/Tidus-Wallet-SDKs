@@ -47,3 +47,20 @@ function mnemonicToPrivateKeySolana(mnemonic: string, accountIndex: number) {
   const keyPair = nacl.sign.keyPair.fromSeed(derivedSeed);
   return base58.encode(keyPair.secretKey);
 }
+
+export function privateKeyToMnemonic(
+  privateKey: string,
+  mnemonicLength: 12 | 24 = 12,
+) {
+  let seed;
+
+  if (privateKey.startsWith("0x")) {
+    seed = Buffer.from(privateKey.slice(2), "hex");
+  } else {
+    seed = Buffer.from(privateKey);
+  }
+
+  return bip39.entropyToMnemonic(
+    Buffer.from(seed.subarray(0, mnemonicLength === 12 ? 16 : 32)),
+  );
+}
